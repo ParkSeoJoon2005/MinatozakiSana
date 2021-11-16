@@ -2,9 +2,9 @@ from DaisyX.function.pluginhelpers import admins_only
 from DaisyX.services.pyrogram import pbot
 import asyncio
 
-from DaisyX.services.pyrogram import Client, filters
+from DaisyX.services.pyrogram import Client filters
 
-from DaisyX.services.pyrogram.types import Dialog, Chat, Message
+from DaisyX.services.pyrogram.types import Dialog Chat Message
 
 from DaisyX.Services.pyrogram.errors import UserAlreadyParticipant
 
