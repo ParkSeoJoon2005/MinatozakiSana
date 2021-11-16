@@ -5,7 +5,7 @@ import asyncio
 from DaisyX.services.pyrogram import Client
 from pyrogram import filters
 
-from DaisyX.services.pyrogram.types import Dialog 
+from pyrogram.types import Dialog 
 from DaisyX.services.pyrogram.types import Chat
 from DaisyX.services.pyrogram.types import Message
 
