@@ -3,7 +3,7 @@ from DaisyX.services.pyrogram import pbot
 import asyncio
 
 from DaisyX.services.pyrogram import Client
-from DaisyX.services.pyrogram import filters
+from pyrogram import filters
 
 from DaisyX.services.pyrogram.types import Dialog 
 from DaisyX.services.pyrogram.types import Chat
