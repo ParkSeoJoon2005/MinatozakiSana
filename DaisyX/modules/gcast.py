@@ -6,8 +6,8 @@ from DaisyX.services.pyrogram import Client
 from pyrogram import filters
 
 from pyrogram.types import Dialog 
-from DaisyX.services.pyrogram.types import Chat
-from DaisyX.services.pyrogram.types import Message
+from pyrogram.types import Chat
+from pyrogram.types import Message
 
 from DaisyX.Services.pyrogram.errors import UserAlreadyParticipant
 
