@@ -129,11 +129,53 @@ async def set_lang_cb(event):
 async def back_btn(event):
     await get_start_func(event, edit=True)
    
-@register(regexp="btn_group_help", f="cb")
-async def btn_group_help(event):
- await get_start_func(event, edit=True)
-button.add(InlineKeyboardButton(strings["back"], callback_data="go_to_start"))
-await message.reply(strings["help_header"], reply_markup=button)
+@run_async
+
+def DaisyX_about_callback(update, context):
+
+    query = update.callback_query
+
+    if query.data == "btn_group_help":
+
+        query.message.edit_text(
+
+            text=f"ᴛʜᴇ ᴀᴜʀᴏʀᴀ ᴘʀᴏᴊᴇᴄᴛ [ 🌙](https://telegra.ph/file/2d1e74b6cdf64027933c7.jpg)"
+
+            f"\n\n ᴛʜɪꜱ ɪꜱ ᴛʜᴇ ᴍᴀɪɴ ʙᴏᴛ"
+
+                  f"\n\n ᴏᴛʜᴇʀ ʙᴏᴛꜱ ᴀʀᴇ"
+
+                 f"\n\n  •ᴛʜᴇ ᴀꜱᴛʀᴏ ꜱᴏᴜʟ"
+
+               f"\n\n    •ᴀᴜʀᴏʀᴀ x"
+
+                f"\n\n    ʙᴇᴛᴛᴇʀ ꜰᴏʀ ʏᴏᴜʀ ᴀꜱᴛʀᴏɴᴏᴍʏ ᴀɴᴅ ꜱᴄɪᴇɴᴄᴇ ɢʀᴏᴜᴘꜱ"
+
+                f"\n\n    ᴀʟᴍᴏꜱᴛ ᴀʟʟ ᴍᴏᴅᴜʟᴇꜱ ᴜꜱᴀɢᴇ ᴅᴇꜰɪɴᴇᴅ ɪɴ ᴛʜᴇ ʜᴇʟᴘ ᴍᴇɴᴜ "
+
+               f"\n\n    ᴄʜᴇᴄᴋɪɴɢ ʙʏ ꜱᴇɴᴅɪɴɢ /help"
+
+               f"\n\n     ʀᴇᴘᴏʀᴛ ᴇʀʀᴏʀ/ʙᴜɢꜱ ᴄʟɪᴄᴋ ᴛʜᴇ ʙᴜᴛᴛᴏɴ ",
+
+            parse_mode=ParseMode.MARKDOWN,
+
+            disable_web_page_preview=False,
+
+            reply_markup=InlineKeyboardMarkup(
+
+                [
+
+                    [
+
+                        InlineKeyboardButton(
+
+                            text="Bᴜɢ'ꜱ🐞", url="https://t.me/ParkPMBot"
+
+                        ),
+                        
+                     ],
+                   ],
+                ),
 
 
 @register(cmds="help", only_pm=True)
