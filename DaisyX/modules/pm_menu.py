@@ -121,11 +121,19 @@ async def help_cb(event, strings):
 @register(regexp="lang_btn", f="cb")
 async def set_lang_cb(event):
     await select_lang_keyboard(event.message, edit=True)
+    
+ 
 
 
 @register(regexp="go_to_start", f="cb")
 async def back_btn(event):
     await get_start_func(event, edit=True)
+   
+@register(regexp="btn_group_help", f="cb")
+async def btn_group_help(event):
+ await get_start_func(event, edit=True)
+button.add(InlineKeyboardButton(strings["back"], callback_data="go_to_start"))
+await message.reply(strings["help_header"], reply_markup=button)
 
 
 @register(cmds="help", only_pm=True)
@@ -143,7 +151,7 @@ async def help_cmd(message, strings):
 async def help_cmd_g(message, strings):
     text = strings["btn_group_help"]
     button = InlineKeyboardMarkup().add(
-        InlineKeyboardButton(text=text, url="https://t.me/DaisyXBOT?start")
+        InlineKeyboardButton(text=text, url="https://t.me/Theminatozakisanabot?start")
     )
     await message.reply(strings["help_header"], reply_markup=button)
 
