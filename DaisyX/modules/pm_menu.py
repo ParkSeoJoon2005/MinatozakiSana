@@ -87,13 +87,13 @@ async def get_start_func(message, strings, edit=False):
     buttons = InlineKeyboardMarkup()
     buttons.add(InlineKeyboardButton(strings["btn_help"], callback_data="get_help"))
     buttons.add(
-        InlineKeyboardButton(strings["btn_lang"], url="https://t.me/boy_Alone_In_Universe"),
+        InlineKeyboardButton(strings["btn_lang"], url="https://t.me/TheNayeonBot"),
         InlineKeyboardButton(
-            strings["btn_source"], url="https://t.me/TheNayeonBot"
+            strings["btn_source"], url="https://t.me/boy_Alone_In_Universe"
         ),
     )
     buttons.add(
-        InlineKeyboardButton(strings["btn_channel"], url="https://t.me/DaisyXUpdates"),
+        InlineKeyboardButton("ᴀʙᴏᴜᴛ ꜱᴀɴᴀ", callback_data="btn_group_help"),
         InlineKeyboardButton(
             strings["btn_group"], url="https://t.me/TheTwiceProject"
         ),
@@ -157,7 +157,7 @@ async def helpmenu_callback(query, callback_data=None, **kwargs):
     msg = f"Help for <b>{mod}</b> module:\n"
     msg += f"{MOD_HELP[mod]}"
     button = InlineKeyboardMarkup().add(
-        InlineKeyboardButton(text="🏃‍♂️ Back", callback_data="get_help")
+        InlineKeyboardButton(text="🔙Back", callback_data="get_help")
     )
     with suppress(MessageNotModified):
         await query.message.edit_text(
