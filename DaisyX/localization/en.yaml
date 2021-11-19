@@ -134,7 +134,7 @@ STRINGS:
     # /delwarns
     purged_warns: "{admin} reset <code>{num}</code> warns of {user} in <b>{chat_title}</b>!"
     usr_no_wrn: "{user} doesn't have any warns to reset."
-    rst_wrn_sofi: 'Daisy never had warns to reset.'
+    rst_wrn_sofi: 'i never had warns to reset.'
     not_digit: Warnlimits should be digits!
 
     # /warnmode
@@ -193,19 +193,7 @@ STRINGS:
     btn_lang: "ᴘʀᴏᴊᴇᴄᴛ"
     btn_channel: "ɴᴀʏᴇᴏɴ☘️"
     btn_group: "ᴀʙᴏᴜᴛ"
-    btn_group_help: "Minatozaki Sana
-
-Sana Minatozaki (Japanese: 湊崎 紗夏; born December 29, 1996), known mononymously as Sana (Korean: 사나; Japanese: サナ), is a Japanese singer based in South Korea. She is a member of the K-pop girl group Twice, formed by JYP Entertainment. Sana is one of Twice's three Japanese members.
-
-•Early life 
-
-Sana was born on December 29, 1996 in Tennōji-ku, Osaka, Japan.She is the only child in her family. She wanted to become a singer and dancer, and was inspired by K-pop groups such as Girls' Generation. In addition to her native Japanese, she is also able to speak Korean, having studied it since moving to South Korea, and basic English.
-
-Career
-
-•Pre-debut
-
-Sana began training with EXPG in Osaka in 2009, originally planning to be a singer in Japan, rather than South Korea. During her middle school years, she was scouted by a JYP Entertainment employee at a shopping mall and was invited to participate in the annual JYP Japan audition held the following day. Sana passed the audition and joined the JYPE trainee program in South Korea in April 2012. She trained for over three years with JYP before her eventual debut with Twice."
+    btn_group_help: "Minatozaki <a href="https://telegra.ph/file/9df820f72fd6c913f7f48.jpg">Sana</a>.\nSana Minatozaki (Japanese: 湊崎 紗夏; born December 29, 1996), known mononymously as Sana (Korean: 사나; Japanese: サナ), is a Japanese singer based in South Korea. She is a member of the K-pop girl group Twice, formed by JYP Entertainment. Sana is one of Twice's three Japanese members.\n<b>•Early life</b>\nSana was born on December 29, 1996 in Tennōji-ku, Osaka, Japan.She is the only child in her family. She wanted to become a singer and dancer, and was inspired by K-pop groups such as Girls' Generation. In addition to her native Japanese, she is also able to speak Korean, having studied it since moving to South Korea, and basic English.\n<b>•Pre-debut</b>\nSana began training with EXPG in Osaka in 2009, originally planning to be a singer in Japan, rather than South Korea. During her middle school years, she was scouted by a JYP Entertainment employee at a shopping mall and was invited to participate in the annual JYP Japan audition held the following day. Sana passed the audition and joined the JYPE trainee program in South Korea in April 2012. She trained for over three years with JYP before her eventual debut with Twice."
     back: "🔙Back"
 
     # /help
